@@ -7,8 +7,8 @@ import pandas as pd
 import seaborn as sns
 
 # Importing the dataset
-train = pd.read_csv('../raw_data/train.csv')
-test = pd.read_csv('../raw_data/test.csv')
+train = pd.read_csv('train.csv')
+test = pd.read_csv('test.csv')
 
 # Dropping unecessary features
 train = train.drop(['PassengerId','Ticket','Cabin','Name','Embarked'], axis=1)

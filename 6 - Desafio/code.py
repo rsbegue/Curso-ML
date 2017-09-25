@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-train = pd.read_csv('../raw_data/train.csv')
-test = pd.read_csv('../raw_data/test.csv')
+train = pd.read_csv('train.csv')
+test = pd.read_csv('test.csv')
 X_train = train.iloc[:, [2,3,4,5,6,7,9]].values
 y_train = train.iloc[:, 1].values
 X_test = test.iloc[:, [1,2,3,4,5,6,8]].values
