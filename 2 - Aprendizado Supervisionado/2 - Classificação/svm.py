@@ -22,7 +22,7 @@ X_test = sc.transform(X_test)
 
 # Criando o modelo
 from sklearn.svm import SVC
-classifier = SVC(kernel = 'rbf', random_state = 0)
+classifier = SVC(kernel= 'linear', random_state = 0)
 classifier.fit(X_train, y_train)
 
 # Prevendo os resultados

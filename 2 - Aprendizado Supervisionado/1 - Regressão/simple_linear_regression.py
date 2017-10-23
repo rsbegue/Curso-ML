@@ -12,11 +12,11 @@ y = dataset.iloc[:, 1].values
 
 # Dividindo em conjunto de treino e conjunto de testes
 from sklearn.cross_validation import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 1/3, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
 # Criando o modelo de Regressão Linear
 from sklearn.linear_model import LinearRegression
-regressor = LinearRegression()
+regressor = LinearRegression(normalize=True)
 regressor.fit(X_train, y_train)
 
 # Predizendo no conjunto de testes

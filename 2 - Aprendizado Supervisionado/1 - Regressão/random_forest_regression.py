@@ -24,7 +24,7 @@ y_train = sc_y.fit_transform(y_train)"""
 
 # Criando o modelo
 from sklearn.ensemble import RandomForestRegressor
-regressor = RandomForestRegressor(n_estimators = 100, random_state = 0) # n_estimators are the numbers of trees
+regressor = RandomForestRegressor(n_estimators = 100, random_state = 0, verbose=2) # n_estimators are the numbers of trees
 regressor.fit(X, y)
 
 # Prevendo o novo resultado
